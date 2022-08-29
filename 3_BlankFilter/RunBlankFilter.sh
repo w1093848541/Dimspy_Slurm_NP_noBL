@@ -28,9 +28,9 @@ dimspy blank-filter \
 --input ../2_AlignSamples/alignSamples.* \
 --output blankFilter.$SLURM_JOB_ID \
 --blank-label 'blank' \
---min-fraction 1.0 \
+--min-fraction 0.0 \
 --function mean \
---min-fold-change 10.0 \
+--min-fold-change 0.0 \
 --remove-blank-samples
 
 echo "Blank Filter Complete"
